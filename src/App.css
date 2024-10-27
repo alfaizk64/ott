@@ -4,7 +4,20 @@
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
 }
-
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
 :root{
   --fontSize: 30px;
   --headTitle: 45px;
