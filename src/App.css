@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+:root{
+  --fontSize: 30px;
+  --headTitle: 45px;
+}
+
+h1,h3{
+  font-size: var(--headTitle);
+}
+/* sideSlidingcss */
+.Menu_item{
+  font-size: 28px;
+}
+
+.icon-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 36px;
+  cursor: pointer;
+  transition: all 0.;
+}
+.box{
+  font-size: 30px;
+}
+
+
+.ul .li a{
+  font-size: 30px;
+}
+
+/* nav bar */
+.iZjZPK{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  background: #371A46 !important;
+}
+.css-dip3t8{
+  background-color: rgb(249, 249, 249) !important;
+}
+
+/* sidebar */
