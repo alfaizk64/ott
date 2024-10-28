@@ -22,12 +22,12 @@ const movieSlice = createSlice({
     extraReducers:(builder) => {
          builder.addCase(fetchMovieData.pending,(state,action)=>{
             state.isLoading=true;
-            state.movies.push(action.payload)
          })
 
          builder.addCase(fetchMovieData.fulfilled, (state, action) => {
-            state.isLoading = false,
+            state.isLoading = false;
             state.movies.push(action.payload);
+
         })
         builder.addCase(fetchMovieData.rejected, (state, action) => {
             state.isError = true;

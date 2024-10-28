@@ -21,7 +21,6 @@ export const webSeriesSlice = createSlice({
     extraReducers: (builder) => {
        builder.addCase(fetchWebSeriesData.pending,(state,action)=>{
         state.isLoading = true;
-        state.webSeries.push(action.payload)
        })
        builder.addCase(fetchWebSeriesData.fulfilled,(state,action)=>{
         state.isLoading = false;

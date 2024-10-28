@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Nav = styled.nav`
@@ -30,7 +31,7 @@ const Menu = styled.ul`
 
 const Item = styled.li``;
 
-const Link = styled.a`
+const div = styled.div`
   color: white;
   text-decoration: none;
 
@@ -103,19 +104,25 @@ const Header = () => {
         <Logo>Dekhlo Ott</Logo>
         <Menu>
           <Item>
-            <Link target="#" href="https://www.instagram.com/igor_dumencic/">
-              Instagram
+            <Link to={"/"}>
+              <div style={{color:"white"}}>
+                Movies
+              </div>
             </Link>
           </Item>
           <Item>
-            <Link target="#" href="https://www.behance.net/igordumencic">
-              Behance
+            <Link to={"/webSeries"}>
+
+              <div style={{color:"white"}}>
+                WebSeries
+              </div>
             </Link>
+            
           </Item>
           <Item>
-            <Link target="#" href="https://github.com/Igor178">
-              Github
-            </Link>
+            <div style={{color:"white"}}>
+            Instagram
+            </div>
           </Item>
         </Menu>
         <NavIcon onClick={() => toggleNav(!toggle)}>
@@ -127,19 +134,19 @@ const Header = () => {
       <Overlay open={toggle}>
         <OverlayMenu open={toggle}>
           <Item>
-            <Link target="#" href="https://www.instagram.com/igor_dumencic/">
+            <div target="#" href="https://www.instagram.com/igor_dumencic/">
               Instagram
-            </Link>
+            </div>
           </Item>
           <Item>
-            <Link target="#" href="https://www.behance.net/igordumencic">
+            <div target="#" href="https://www.behance.net/igordumencic">
               Behance
-            </Link>
+            </div>
           </Item>
           <Item>
-            <Link target="#" href="https://github.com/Igor178">
+            <div target="#" href="https://github.com/Igor178">
               Github
-            </Link>
+            </div>
           </Item>
         </OverlayMenu>
       </Overlay>

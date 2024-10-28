@@ -5,7 +5,7 @@ import { CgProfile } from "react-icons/cg";
 import { IoSettings } from "react-icons/io5";
 import { MdMovie ,MdOutlineSportsBaseball  } from "react-icons/md";
 import { LuRadioReceiver } from "react-icons/lu";
-
+import { Link } from 'react-router-dom';
 const SideSlidingBar = () => {
     const [collapsed, setCollapsed] = useState(true);
 
@@ -23,7 +23,7 @@ const SideSlidingBar = () => {
                   <div style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",gap:"28px"}} >
                       {collapsed?(<div className='icon-wrapper'><FaHome  /></div>):( <MenuItem className='Menu_item'>Home</MenuItem>)}
                       {collapsed?(<div className='icon-wrapper'><MdMovie /></div>):( <MenuItem className='Menu_item'> Movies</MenuItem>)}
-                      {collapsed?(<div className='icon-wrapper'><LuRadioReceiver /></div>):( <MenuItem className='Menu_item'> Web Series</MenuItem>)}
+                      {collapsed?(<div className='icon-wrapper'><LuRadioReceiver /></div>):( <div><Link to={"/webSeries"}><MenuItem className='Menu_item'> Web Series</MenuItem></Link></div>)}
                       {collapsed?(<div className='icon-wrapper'><MdOutlineSportsBaseball /></div>):( <MenuItem className='Menu_item'>Sports</MenuItem>)}
                   </div>
               </Menu>
